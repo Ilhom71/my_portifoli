@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+
+*{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-family: "Poppins",sans-serif;
+}
+
+.container{
+    background-color: rgb(16, 15, 15);
+    height: 100vh;
+    padding: 0px 100px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+ 
+     display: flex;
+     text-transform: capitalize;
+     align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.menu>ul{
+    display: flex;
+    gap: 0px 30px;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+ul>li>a:hover{
+    color: greenyellow;
+}
+
+.active{
+    color: greenyellow!important;
+}
+
+section{
+  
+    height: 80vh;
+    margin: 30px 0px;
+
+    display: flex;
+    align-items: center;
+}
+
+section>.text{
+    width: 50%;
+}
+
+.text>h1{
+    font-size: 50px;
+   margin: 10px 0px;
+}
+.text>h3{
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+
+.wrp_icon{
+  
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.wrp_icon>button{
+    background-color: greenyellow;
+    border: none;
+    font-size: 20px;
+    box-shadow: rgba(153, 255, 0, 0.77) 0px 5px 15px;
+    color:white;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    
+}
+
+.wrp_icon>a>i{
+    border: 1px solid greenyellow;
+    padding: 8px ;
+    height: fit-content;
+    border-radius: 50%;
+   color: greenyellow;
+}
+.wrp_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.img{
+    
+    width: 380px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  
+    border-radius: 50%;
+    
+    position:relative;
+   
+    z-index: 10;
+    
+}
+
+.img::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    background-image: conic-gradient(transparent,transparent,transparent,greenyellow);
+    z-index: -5;
+    
+    animation:rotate infinite linear forwards 5s;
+  
+}
+
+@keyframes rotate {
+    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.c{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background-color: rgb(16, 15, 15);
+    z-index: -5;
+    
+}
+
+.text>h1:hover{
+    -webkit-text-stroke: .7px rgb(255, 47, 47);
+    color: transparent!important;
+}
+
+.wrp_icon i:hover{
+    background-color: red;
+
+}
+.wrp_icon button:hover{
+    transform: scale(1.1);
+
+}
+
+p::selection{
+    color: red;
+    background-color: black;
+
+}
+
+
+.dn{
+    display: none!important;
+    
+
+}
+
+.db{
+    display: block!important;
+}
+
+.name{
+    height: 70px ;
+    color: black!important;
+    -webkit-text-stroke: .7px greenyellow;
+}

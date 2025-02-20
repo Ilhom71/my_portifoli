@@ -5,7 +5,7 @@ if (ans) {
     let moon = document.querySelector(".moon");
     let sun = document.querySelector(".sun");
     let allElements = document.querySelectorAll("*");
-      console.log(allElements);
+     
 
 
 
@@ -53,6 +53,94 @@ setInterval(() => {
 
 
 
+let li=document.querySelectorAll(".menu_ul>li>a")
+
+
+li.forEach((val,ind,arr)=>{
+
+   val.addEventListener("click",()=>{
+      
+      
+     if(val.textContent.toLowerCase()=="about"){
+     
+      greeting("Mirtjiyev Ilhom")
+
+      
+     }else if(val.textContent.toLowerCase()=="home"){
+      
+     } else{
+
+      def()
+     }
+
+     arr.forEach(e=>{
+     if(e==val){
+      e.classList.add("active")
+     }else if(e.textContent.toLowerCase()=="home"){
+      e.classList.add("active")
+     }else{
+      e.classList.remove("active")
+     }
+     })
+
+
+   })
+})
+
+
+
+
+
+
+function greeting(name){
+
+document.querySelector(".modal").innerHTML=`
+
+
+Salom! Men ${name}, frontend dasturchiman. Zamonaviy va interaktiv veb-ilovalar yaratish. HTML, CSS, JavaScript hamda React va Vue kabi kutubxonalar bilan ishlayman. Portfoliomdagi loyihalarim bilan tanishib, mening ish uslubimni baholashingiz mumkin!
+
+`
+
+
+let info=document.querySelector(".info")
+
+info.classList.remove("dn")
+
+
+
+}
+
+
+function def(){
+
+   document.querySelector(".modal").innerHTML=`bu yerga  malumot joylanmagan
+   
+   `
+   
+   
+   let info=document.querySelector(".info")
+   
+   info.classList.remove("dn")
+
+
+   
+   }
+
+
+document.querySelector  (".info").addEventListener("click",()=>{
+   let info=document.querySelector(".info")
+
+   li.forEach(e=>{
+      if(e.textContent.toLowerCase()=="home"){
+         e.classList.add("active")
+      }else{
+         e.classList.remove("active")
+      }
+   })
+
+info.classList.add("dn")
+
+})
 
 
 

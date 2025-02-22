@@ -20,7 +20,7 @@ body{
     
     .container{
         background-color: black;
-        height: 100vh;
+        height: fit-content;
         padding: 0px 100px;
     }
     
@@ -707,3 +707,78 @@ body{
 
     
   }
+
+  .kub{
+    width: 90%;
+
+    height: 200px;
+    
+    margin: auto;
+
+    position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+
+  }
+
+  .cube{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+    color: aliceblue;
+    perspective: 10000px;
+
+    
+
+    
+
+  
+    
+   
+
+
+}
+.tomon{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    line-height: 100px;
+    text-align: center;
+    border: 2px solid ;
+   
+    border-image: linear-gradient(45deg,red,blue) 30;
+
+    
+   
+}
+.old{
+    transform: translateZ(50px);
+    
+}
+.orqa{
+    transform: translateZ(-50px) ;
+   
+}
+.ong{
+    transform: translateX(50px) rotatex(90deg) rotatey(90deg);
+    
+    
+}
+.chap{
+    transform: translateX(-50px) rotateY(-90deg);
+   
+}
+.tepa{
+    transform: translateY( -50px) rotatex(90deg);
+    
+
+}
+.past{
+    transform: translateY(50px) rotatex(-90deg);
+
+}

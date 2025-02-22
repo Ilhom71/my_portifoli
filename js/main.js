@@ -147,3 +147,24 @@ document.querySelector(".name").innerHTML=" "
 
 
 
+
+
+let kub=document.querySelector(".cube")
+
+let z=1
+
+   setInterval(()=>{
+    z++
+    kub.style.transform = `rotateZ(45deg) rotateY(${z}deg) rotateX(${0}deg)`;
+
+
+      
+      
+
+   },100)
+
+
+
+
+
+

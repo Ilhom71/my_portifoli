@@ -1,9 +1,29 @@
+/* .info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 78, 77, 0.579);
+    z-index: 100px;
+}
+
+.modal{
+    width: 500px;
+    background-color: black;
+    
+    padding: 20px;
+    color: white!important;
+} */
 body{
     margin: 0;
     padding: 0;
     
     
-
+    
 }
 
 *{
@@ -12,10 +32,87 @@ body{
     list-style: none;
     font-family: "Poppins",sans-serif;
 }
+ul>li>a:hover{
+    color: greenyellow;
+}
+
+.active{
+    color: greenyellow!important;
+}
+
+.wrp_icon>button{
+    background-color: greenyellow;
+    border: none;
+    font-size: 20px;
+    box-shadow: rgba(153, 255, 0, 0.77) 0px 5px 15px;
+    color:white;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    
+}
+.text>h1:hover{
+    -webkit-text-stroke: .7px rgb(255, 47, 47);
+    color: transparent!important;
+}
+
+.wrp_icon i:hover{
+    background-color: red;
+
+}
+.wrp_icon button:hover{
+    transform: scale(1.1);
+
+}
+
+p::selection{
+    color: red;
+    background-color: black;
+
+}
+
+
+.dn{
+    display: none!important;
+    
+
+}
+
+.db{
+    display: block!important;
+}
+
+.name{
+    height: 70px ;
+    color: black!important;
+    -webkit-text-stroke: .7px greenyellow;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.wrp_icon>a>i{
+    border: 1px solid greenyellow;
+    padding: 8px ;
+    height: fit-content;
+    border-radius: 50%;
+   color: greenyellow;
+}
+
 
 @media screen and (min-width: 1000px) and (max-width:1600px) {
 
     
+.about{
+    flex-direction: row;
+}
+
+.about>img{
+    width: 250px;
+    height: 250px;
+}
 
     
     .container{
@@ -33,10 +130,7 @@ body{
          align-items: center;
     }
     
-    .logo{
-        font-size: 40px;
-        font-weight: 900;
-    }
+  
     
     .menu>ul{
         display: flex;
@@ -44,14 +138,6 @@ body{
         font-weight: 600;
         font-size: 20px;
     
-    }
-    
-    ul>li>a:hover{
-        color: greenyellow;
-    }
-    
-    .active{
-        color: greenyellow!important;
     }
     
     section{
@@ -86,25 +172,7 @@ body{
         
     }
     
-    .wrp_icon>button{
-        background-color: greenyellow;
-        border: none;
-        font-size: 20px;
-        box-shadow: rgba(153, 255, 0, 0.77) 0px 5px 15px;
-        color:white;
-        padding: 15px;
-        border-radius: 15px;
-        font-weight: 600;
-        
-    }
-    
-    .wrp_icon>a>i{
-        border: 1px solid greenyellow;
-        padding: 8px ;
-        height: fit-content;
-        border-radius: 50%;
-       color: greenyellow;
-    }
+
     .wrp_img{
         display: flex;
         justify-content: center;
@@ -180,68 +248,21 @@ body{
         
     }
     
-    .text>h1:hover{
-        -webkit-text-stroke: .7px rgb(255, 47, 47);
-        color: transparent!important;
-    }
     
-    .wrp_icon i:hover{
-        background-color: red;
-    
-    }
-    .wrp_icon button:hover{
-        transform: scale(1.1);
-    
-    }
-    
-    p::selection{
-        color: red;
-        background-color: black;
-    
-    }
-    
-    
-    .dn{
-        display: none!important;
-        
-    
-    }
-    
-    .db{
-        display: block!important;
-    }
-    
-    .name{
-        height: 70px ;
-        color: black!important;
-        -webkit-text-stroke: .7px greenyellow;
-    }
-    
-    .info{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(78, 78, 77, 0.579);
-        z-index: 100px;
-    }
-    
-    .modal{
-        width: 500px;
-        background-color: black;
-        
-        padding: 20px;
-        color: white!important;
-    }
   }
 
 
 
   @media screen and (min-width:600px) and (max-width:1000px) {
+
+    .about{
+        flex-direction: row;
+    }
+
+    .about>img{
+        width: 100px;
+        height: 100px;
+    }
     
 
     
@@ -261,10 +282,7 @@ body{
          align-items: center;
     }
     
-    .logo{
-        font-size: 40px;
-        font-weight: 900;
-    }
+ 
     
     .menu>ul{
         display: flex;
@@ -274,13 +292,7 @@ body{
     
     }
     
-    ul>li>a:hover{
-        color: greenyellow;
-    }
-    
-    .active{
-        color: greenyellow!important;
-    }
+ 
     
     section{
       
@@ -316,25 +328,9 @@ body{
         
     }
     
-    .wrp_icon>button{
-        background-color: greenyellow;
-        border: none;
-        font-size: 20px;
-        box-shadow: rgba(153, 255, 0, 0.77) 0px 5px 15px;
-        color:white;
-        padding: 15px;
-        border-radius: 15px;
-        font-weight: 600;
-        
-    }
+
     
-    .wrp_icon>a>i{
-        border: 1px solid greenyellow;
-        padding: 8px ;
-        height: fit-content;
-        border-radius: 50%;
-       color: greenyellow;
-    }
+
     .wrp_img{
         display: flex;
         justify-content: center;
@@ -409,69 +405,20 @@ body{
         z-index: -5;
         
     }
-    
-    .text>h1:hover{
-        -webkit-text-stroke: .7px rgb(255, 47, 47);
-        color: transparent!important;
-    }
-    
-    .wrp_icon i:hover{
-        background-color: red;
-    
-    }
-    .wrp_icon button:hover{
-        transform: scale(1.1);
-    
-    }
-    
-    p::selection{
-        color: red;
-        background-color: black;
-    
-    }
-    
-    
-    .dn{
-        display: none!important;
-        
-    
-    }
-    
-    .db{
-        display: block!important;
-    }
-    
-    .name{
-        height: 70px ;
-        color: black!important;
-        -webkit-text-stroke: .7px greenyellow;
-    }
-    
-    .info{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(78, 78, 77, 0.579);
-        z-index: 100px;
-    }
-    
-    .modal{
-        width: 500px;
-        background-color: black;
-        padding: 20px;
-        color: white!important;
-    }
+   
 
   }
 
   @media screen and (min-width:100px ) and (max-width:600px) {
+
+    .about>img{
+        width: 80px;
+        height: 80px;
+    }
+    
+
     .container{
-        background-color: rgb(16, 15, 15);
+        background-color: black;
         height: fit-content;
         padding: 50px 20px;
     }
@@ -498,14 +445,7 @@ body{
         font-size:16px;
     
     }
-    
-    ul>li>a:hover{
-        color: greenyellow;
-    }
-    
-    .active{
-        color: greenyellow!important;
-    }
+
     
     section{
       
@@ -572,7 +512,7 @@ body{
     
 
     .wrp_img>img{
-        width: 280px;
+        width: 300px;
     }
 
     .img{
@@ -628,9 +568,9 @@ body{
         align-items: center;
     }
 
-    .c>img{
-        width: 280px;
-        height: 300px;
+    .c>i{
+        width: 350px;
+        height: 250px;
     }
     
     
@@ -645,63 +585,6 @@ body{
         background-color: black;
         z-index: -5;
         
-    }
-    
-    .text>h1:hover{
-        -webkit-text-stroke: .7px rgb(255, 47, 47);
-        color: transparent!important;
-    }
-    
-    .wrp_icon i:hover{
-        background-color: red;
-    
-    }
-    .wrp_icon button:hover{
-        transform: scale(1.1);
-    
-    }
-    
-    p::selection{
-        color: red;
-        background-color: black;
-    
-    }
-    
-    
-    .dn{
-        display: none!important;
-        
-    
-    }
-    
-    .db{
-        display: block!important;
-    }
-    
-    .name{
-        height: 70px ;
-        color: black!important;
-        -webkit-text-stroke: .7px greenyellow;
-    }
-    
-    .info{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(78, 78, 77, 0.579);
-        z-index: 100px;
-    }
-    
-    .modal{
-        width: 500px;
-        background-color: black;
-        padding: 20px;
-        color: white!important;
     }
 
 
@@ -782,3 +665,51 @@ body{
     transform: translateY(50px) rotatex(-90deg);
 
 }
+
+
+.about{
+
+ margin-top: 50px;
+    
+    width: 90%;
+    margin: auto;   
+    margin-top: 20px;
+    height: fit-content;
+
+    display: flex;
+   justify-content: space-between;
+   
+}
+
+.about>img:hover{
+
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.portiolio img{
+
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: white 0px 5px 15px;
+
+
+}
+
+.portiolio img:hover{
+    box-shadow: rgba(66, 204, 7, 0.645) 0px 5px 15px;
+}
+
+.portiolio>.wrp{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+
+

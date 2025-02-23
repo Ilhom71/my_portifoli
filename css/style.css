@@ -18,6 +18,12 @@
     padding: 20px;
     color: white!important;
 } */
+
+.c>img{
+    width: 350px;
+    height: 350px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -234,6 +240,7 @@ p::selection{
         align-items: center;
     }
     
+   
     
     
     .img::after {
@@ -247,6 +254,12 @@ p::selection{
         z-index: -5;
         
     }
+
+    .portiolio>.wrp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
     
     
   }
@@ -255,6 +268,13 @@ p::selection{
 
   @media screen and (min-width:600px) and (max-width:1000px) {
 
+
+    .portiolio>.wrp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column wrap;
+        }
     .about{
         flex-direction: row;
     }
@@ -410,6 +430,12 @@ p::selection{
   }
 
   @media screen and (min-width:100px ) and (max-width:600px) {
+    .portiolio>.wrp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column wrap;
+        }
 
     .about>img{
         width: 80px;
@@ -568,7 +594,7 @@ p::selection{
         align-items: center;
     }
 
-    .c>i{
+    .c>img{
         width: 350px;
         height: 250px;
     }
@@ -703,11 +729,9 @@ p::selection{
     box-shadow: rgba(66, 204, 7, 0.645) 0px 5px 15px;
 }
 
-.portiolio>.wrp{
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
+
+
+
 
 
 

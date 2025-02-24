@@ -166,52 +166,43 @@ let z=1
 
 
 
-   const carousel = document.querySelector(".carousel-container");
-   const items = document.querySelectorAll(".carousel-item");
-   const prevBtn = document.getElementById("prev");
-   const nextBtn = document.getElementById("next");
-   
-   let currentIndex = 0;
-   const totalItems = items.length;
-   const theta = (2 * Math.PI) / totalItems;
-   const radius = 400;
-   
-   function rotateCarousel() {
-     const angle = theta * currentIndex * -1;
-     carousel.style.transform = `rotateY(${angle}rad)`;
-   
-     items.forEach((item, index) => {
-       const itemAngle = theta * index;
-       const x = Math.sin(itemAngle) * radius;
-       const z = Math.cos(itemAngle) * radius;
-       item.style.transform = `translate3d(${x}px, 0, ${z}px) rotateY(${itemAngle}rad)`;
-     });
+let top_link=document.querySelector(".about_l")
+
+top_link.addEventListener("click",()=>{
+ document.querySelector(".about").scrollIntoView({behavior:"smooth"})
+})
+
+
+
+let top_link3=document.querySelector(".contact_l")
+
+top_link3.addEventListener("click",()=>{
+ document.querySelector(".contact").scrollIntoView({behavior:"smooth"})
+})
+
+
+
+function roll(){
+  
+let top_link2=document.querySelector(".portfolio_l")
+
+top_link2.addEventListener("click",()=>{
+ document.querySelector(".portiolio").scrollIntoView({behavior:"smooth"})
+})
+}
+
+roll()
+
+
+let links= document.querySelectorAll(".about>img")
+
+
+links.forEach((val,ind)=>{
+  val.addEventListener("click",()=>{
+
+   if(ind==0){
+    
    }
-   
-   // Initial setup
-   items.forEach((item, index) => {
-     const itemAngle = theta * index;
-     item.style.transform = `rotateY(${itemAngle}rad) translateZ(${radius}px)`;
-   });
-   
-   // Event listeners for buttons
-   prevBtn.addEventListener("click", () => {
-     currentIndex--;
-     rotateCarousel();
-   });
-   
-   nextBtn.addEventListener("click", () => {
-     currentIndex++;
-     rotateCarousel();
-   });
-   
-   // Auto-rotate
-   setInterval(() => {
-     currentIndex++;
-     rotateCarousel();
-   }, 5000);
-   
-   // Initial rotation
-   rotateCarousel();
-   
+  })
+})
 
